@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/java-backend-magsad"
+    username: "postgres"
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+server:
+  servlet:
+    context-path: "/api"
