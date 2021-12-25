@@ -1,6 +1,8 @@
 package com.magsad.electronics.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -11,9 +13,7 @@ public class ModelProperty {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    /*    @ManyToOne
-        @ToString.Exclude
-        private Model model;*/
+
     private Double price;
     private String cpu;
     private String ram;
@@ -28,4 +28,10 @@ public class ModelProperty {
     private String connection;
     private String chargeType;
     private String extraProperty;
+
+
+    @ManyToOne
+    @ToString.Exclude
+    @JsonIgnore
+    private Model model;
 }

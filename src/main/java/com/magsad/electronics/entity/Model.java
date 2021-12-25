@@ -1,6 +1,8 @@
 package com.magsad.electronics.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.magsad.electronics.enums.ModelType;
+
 import lombok.Data;
 import lombok.ToString;
 
@@ -24,4 +26,10 @@ public class Model {
     @JoinColumn(name = "model_id")
     @ToString.Exclude
     private List<ModelProperty> modelPropertyList = new ArrayList<>();
+
+    @ManyToOne
+    @ToString.Exclude
+    @JsonIgnore
+    private Brand brand;
+
 }
