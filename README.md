@@ -1,3 +1,7 @@
+
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # spring-boot-electronics-store
 
 The central interface in the Spring Data repository abstraction is Repository. It takes the domain class to manage as well as the ID type of the domain class as type arguments. This interface acts primarily as a marker interface to capture the types to work with and to help you to discover interfaces that extend this one. The CrudRepository interface provides sophisticated CRUD functionality for the entity class that is being managed.
@@ -51,3 +55,8 @@ DELETE, delete a brand : http://localhost:8080/api/modelproperties/{id}
 Create a modelproperty body : {"id": "", "price": "", "cpu": "", "ram": "", "screen": "", "camera": "", "battery": "", "stockCount": "", "storage": "", "nfc": "", "bluetooth": "", "wifi": "", "connection": "", "chargeType": "", "extraProperty": ""}
 
 Update a modelproperty body : { "id": ,(if exists) "price": "", "cpu": "", "ram": "", "screen": "", "camera": "", "battery": "", "stockCount": "", "storage": "", "nfc": "", "bluetooth": "", "wifi": "", "connection": "", "chargeType": "", "extraProperty": ""}
+
+[license-shield]: https://img.shields.io/github/license/magsadn/spring-boot-electronics-store?style=for-the-badge
+[license-url]: https://github.com/magsadn/spring-boot-electronics-store/blob/main/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/magsad/
